@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Collection at Home</title>
+    <!-- Add this script section at the end of your HTML body -->
+
+
+
+    <style>
+        /* Reset some default styles */
+        .header11{
+            background-color: #005A8D;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            
+        
+        }
+        header {
+    background-color: #005A8D;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #f3f5f1;
+}
+        body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+        .p {
+            font-size: 20px;
+        }
+
+        .menu-bar {
+    background-color: #0074a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #66ce11;
+    transform: scale(1.1);
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+        /* Style the navigation links */
+        
+
+        .button {
+            text-align: center;
+        }
+
+        .button a {
+            display: inline-block;
+            background-color: #3d9205;
+            color: #f1f5f7;
+            padding: 10px 20px;
+            /* Button padding */
+            border-radius: 5px;
+            /* Button border radius */
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .button a:hover {
+            background-color: #f6fbfd; /* Primary Accent Color */
+            color: #0a0909; /* Primary Text Color */
+        }
+
+        header {
+            background-color: #005A8D; /* Primary Green */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+       
+        main {
+            padding: 2em;
+        }
+
+        .contact-form {
+            background-color: #f7f7f7;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2em;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0096D6;
+        }
+        .body2 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 130vh;
+            background-color: #00A388; /* Primary Green */
+            color: #dee7ec;
+        }
+
+        .contact-form button {
+            background-color: #0096D6;
+            color: white;
+            padding: 0.8em 1em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0082BF;
+        }
+
+        button[type="submit"] {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+button:hover{
+    background-color: #66ce11;
+            /* Change color on hover */
+            transform: scale(1.1);
+            /* Scale up on hover */
+}
+        /* Services styles */
+        #services {
+            margin-top: 20px;
+        }
+.p{
+    font-size: 20px;
+}
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info{
+    align-items: center;
+    text-align: center;
+
+}
+        li {
+            margin-bottom: 10px;
+        }
+.form{
+    background-color: #102a80;
+    color: #a4f3e6;
+}
+        /* Contact styles */
+        #contact {
+            margin-top: 20px;
+        }
+#contact{
+    margin-top: 30px;
+}
+        /* Footer styles */
+       
+        body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #008080; /* Parrot green */
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+/* Center the footer content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffffff; /* White border */
+    border-radius: 50%; /* Rounded shape */
+    padding: 5px; /* Add some padding around the logo */
+}
+
+/* Style the slogan */
+.slogan h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the contact information */
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Style the social media links (add your own styles) */
+.social-media {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Style the copyright text */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+        .intro{
+            align-items: center;
+            text-align: center;
+
+        }
+        #location{
+            align-items: center;
+            text-align: center;
+        }
+        #contact-form{
+            background-color: #81d0f5;
+            color: #f5f8f3;
+            
+        }
+        .contact-form button {
+            background-color: #0096D6;
+            color: white;
+            padding: 0.8em 1em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0082BF;
+        }
+        .header1 {
+    background-color: #005A8D;
+    color: white;
+    text-align: center;
+    padding: 0.4em;
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    border-radius: 50%; /* Makes the element round */
+}
+.header2 {
+    background-color: #005A8D;
+    color: white;
+    text-align: center;
+    padding: 0.4em;
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    border-radius: 50%; /* Makes the element round */
+}
+
+    </style>
+
+</head>
+<body>
+   
+    <header>
+        <h1>Welcome to Our Sample Collection Service</h1>
+        <p>Schedule a home sample collection at your convenience.</p>
+    </header>
+    <div class="menu-bar">
+        <div class="logo">
+            <img src="img/british2.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Home Sample Collection</a>
+                <div class="dropdown-content">
+                    <a href="gojra.html">Gojra</a>
+                    <a href="#.html">Mongi Bangla</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+   
+    <!-- ... (previous HTML code) ... -->
+
+<main>
+    <div class="header1"><h1>Contact for Home Sample Collection</h1></div>
+    <div class="form">
+        <section class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+        
+                <datalist id="address-suggestions">
+                    <option value="123 Main St, Gojra">
+                    <option value="456 Elm Ave,Mongi Bangla">
+                    <!-- Add more address options as needed -->
+                </datalist>
+        
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+         
+       
+</main>
+
+<!-- ... (remaining HTML code) ... -->
+
+
+                <div class="intro">
+
+        <section id="services">
+           <div class="header2">
+            <h1>Our Services</h1>
+        </div>
+            <ul>
+                <li>Blood Sample Collection</li>
+                <li>Urine Sample Collection</li>
+                <li>Saliva Sample Collection</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </section>
+
+        
+        <section id="contact">
+            <div class="header2">
+            <h1>Contact Us</h1></div>
+            <p>If you have any questions or need assistance, please don't hesitate to contact us:</p>
+            <p>Email:britishlab07@gmail.com</p>
+            <p>Phone: 0300-0960284</p>
+            <p>Address: Mongi Bangla Road, On the Opposite off Civil Hospital </p>
+         
+        </section>
+    </div>
+    
+    <div class="loco">
+    <section id="location">
+        <div class="header2">
+        <h1>Our Location</h1></div>
+        <a href="https://maps.app.goo.gl/1rDeUG9A6Rkt42266"><img src="img/map.jpg" width="70%"   height="500"> </a> 
+      
+          
+           
+      
+    </section>
+</div>
+</div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="logo">
+            <img src="img/british2.png" alt="British Lab Logo">
+        </div>
+        <div class="slogan">
+            <h1>Don't Guess, Be Accurate</h1>
+        </div>
+        <div class="contact-info">
+            <p>Contact Information:</p>
+            <p>Phone: [+92 334-9601213]</p>
+            <p>Email: [britishlab07@gmail.com]</p>
+            <p>Location: [Mongi Bangla Road, On the Opposite of Civil Hospital, PK]</p>
+        </div>
+        <div class="social-media">
+            <p>Connect with us on social media:</p>
+            <a href="https://www.facebook.com/profile.php?id=61550768012703" target="_blank"><img src="img/facebook.png" height="30px" ></a>
+            <a href="https://wa.link/e7piep" target="_blank"><img src="img/whatsapp.png" height="30px"></a>
+           
+        </div>
+    </div>
+    <div class="about-us">
+        <h2>About British Lab</h2>
+        <p>British Lab is a state-of-the-art blood test laboratory dedicated to providing accurate and reliable test results. With a team of experienced professionals and the latest technology, we ensure the highest standards in healthcare.</p>
+        <p>Our mission is to improve the well-being of our community by offering comprehensive blood testing services, delivered with precision and care.</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; <span id="current-year"></span> British Lab</p>
+    </div>
+</footer>
+</body>
+</html>

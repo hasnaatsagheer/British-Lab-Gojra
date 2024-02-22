@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - British Lab </title>
+ <style>
+
+    
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header1,
+.header11 {
+    background-color: #005A8D;
+    color: white;
+    text-align: center;
+    padding: 0.4em;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+/* Header styles */
+header {
+    background-color: #005A8D;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #f3f5f1;
+}
+
+        /* Style the navbar */
+        .menu-bar {
+    background-color: #0074a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #66ce11;
+    transform: scale(1.1);
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+        /* Style the navigation links */
+       
+
+        .button {
+            text-align: center;
+        }
+
+        .button a {
+            display: inline-block;
+            background-color: #3d9205; /* Primary Accent Color */
+            color: #f1f5f7; /* Primary Text Color */
+            padding: 10px 20px;
+            /* Button padding */
+            border-radius: 5px;
+            /* Button border radius */
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .button a:hover {
+            background-color: #f6fbfd; /* Primary Accent Color */
+            color: #eee9e9; /* Primary Text Color */
+        }
+
+       
+
+        main {
+            padding: 2em;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #008080; /* Secondary Background Color */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(248, 246, 246, 0.1);
+        }
+
+      
+
+        p {
+            font-size: 100%;
+            color: #ffffff; /* Dark text color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+
+        body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #008080; /* Parrot green */
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+/* Center the footer content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffffff; /* White border */
+    border-radius: 50%; /* Rounded shape */
+    padding: 5px; /* Add some padding around the logo */
+}
+
+/* Style the slogan */
+.slogan h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the contact information */
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Style the social media links (add your own styles) */
+.social-media {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Style the copyright text */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Reset some default styles */
+
+
+
+main {
+    padding: 2em;
+}
+.p{
+    color: #fff;
+}
+
+
+
+
+.slogan {
+    font-size: 1.7em;
+}
+
+
+ </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to British Lab</h1>
+        <h2>Don't Guess, Be Accurate</h2>
+    </header>
+    <div class="menu-bar">
+        <div class="logo">
+            <img src="img/british2.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Home Sample Collection</a>
+                <div class="dropdown-content">
+                    <a href="gojra.html">Gojra</a>
+                    <a href="bangla.html">Mongi Bangla</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+   <body>
+    <div class="header1">
+        <h1>About Us</h1>
+    </div>
+    <section class="section">
+        <h1>Welcome to British Lab</h1>
+        <p>Where precision and patient-centric care converge to shape the future of healthcare. Established with a profound commitment to excellence, we have become a beacon of innovation in the field of medical science, thanks to the dedicated efforts of our team, led by Mr. Rana Saghir.</p>
+    </section>
+    <section class="section">
+        <h1>Our Vision</h1>
+        <p>At British Lab, our vision is to revolutionize the healthcare landscape by consistently pushing the boundaries of scientific discovery and medical advancement. We aspire to set new standards of accuracy, compassion, and patient-centered care that will benefit individuals and communities alike.</p>
+    </section>
+    <section class="section">
+        <h1>Our Founder</h1>
+        <p>Mr. Rana Saghir, a distinguished figure in the healthcare industry, has been the driving force behind our success. With years of experience and expertise in the British laboratory, he brings an unparalleled commitment to excellence and a deep passion for improving the lives of patients worldwide.</p>
+    </section>
+    <section class="section">
+        <h1>Our Commitment</h1>
+        <p>At the heart of British Lab lies an unwavering commitment to precision. We understand that every test, every diagnosis, and every treatment decision can have a profound impact on an individual's well-being. That's why we spare no effort in ensuring the utmost accuracy in all our endeavors.</p>
+    </section>
+    <section class="section">
+        <h1>Our Expertise</h1>
+        <p>Our laboratory is staffed with a team of highly skilled professionals who share a common dedication to advancing healthcare. They bring their collective expertise to bear on every task, striving for excellence in research, diagnosis, and patient care.</p>
+    </section>
+    <section class="section">
+        <h1>Innovation at the Core</h1>
+        <p>Innovation is not just a buzzword at British Lab; it's embedded in our DNA. We continuously invest in cutting-edge technology and research to stay at the forefront of medical science. Our aim is to develop and implement novel approaches that enhance healthcare outcomes and improve the lives of our patients.</p>
+    </section>
+    <section class="section">
+        <h1>Patient-Centric Care</h1>
+        <p>We firmly believe that the patient's well-being is the ultimate measure of our success. Our commitment to patient-centric care is not just a promise; it's a daily practice. We listen, we empathize, and we tailor our services to meet the unique needs of every individual under our care.</p>
+    </section>
+   
+    <section class="section" id="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any inquiries or would like to collaborate with us, please feel free to contact us:</p>
+        <ul>
+            <li>Email: britishlab7@gmail.com</li>
+            <li>Phone:0300-0960284</li>
+            <li>Address: British Lab Gojra  Mehndi Shah bazar Near Shehryar Ice Cream</li>
+       
+        </ul>
+    </section>
+
+    <footer>
+    
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/british2.png" alt="British Lab Logo">
+            </div>
+            <div class="slogan">
+                <h1>Don't Guess, Be Accurate</h1>
+            </div>
+            <div class="contact-info">
+                <p>Contact Information:</p>
+                <p>Phone: [+92 300-0960284]</p>
+                <p>Email: [britishlab07@gmail.com]</p>
+                <p>Location: [Mehdi Shah Bazar, Gojra. Near shehryar ice cream, PK]</p>
+                <p>Location: [Mongi Bangla Road, On the Opposite of Civil Hospital, PK]</p>
+            </div>
+            <div class="social-media">
+                <p>Connect with us on social media:</p>
+                <a href="https://www.facebook.com/profile.php?id=61550768012703" target="_blank"><img src="img/facebook.png" height="30px" ></a>
+                <a href="https://wa.link/e7piep" target="_blank"><img src="img/whatsapp.png" height="30px"></a>
+              </div>
+        </div>
+        <div class="about-us">
+            <h2>About British Lab</h2>
+            <p>British Lab is a state-of-the-art blood test laboratory dedicated to providing accurate and reliable test results. With a team of experienced professionals and the latest technology, we ensure the highest standards in healthcare.</p>
+            <p>Our mission is to improve the well-being of our community by offering comprehensive blood testing services, delivered with precision and care.</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> British Lab</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
